@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="672.0" style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication4.CreateController">
+   <children>
+      <Label layoutX="32.0" layoutY="53.0" prefHeight="17.0" prefWidth="205.0" text="Network Name           :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nname" layoutX="226.0" layoutY="50.0" prefHeight="25.0" prefWidth="248.0" />
+      <ListView fx:id="list" layoutX="32.0" layoutY="135.0" onMouseClicked="#handleListClick" prefHeight="269.0" prefWidth="443.0" />
+      <Button layoutX="505.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleAddAction" prefHeight="25.0" prefWidth="59.0" text="Add" />
+      <Button layoutX="505.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleRemoveAction" text="Remove" />
+      <Button layoutX="505.0" layoutY="379.0" mnemonicParsing="false" onAction="#handleCreateAction" prefHeight="25.0" prefWidth="59.0" text="Create" />
+      <ProgressBar fx:id="pbar" layoutX="32.0" layoutY="439.0" prefHeight="18.0" prefWidth="443.0" progress="0.0" />
+      <Button layoutX="505.0" layoutY="436.0" mnemonicParsing="false" onAction="#handleExitAction" prefHeight="25.0" prefWidth="59.0" text="Exiit" />
+   </children>
+</AnchorPane>

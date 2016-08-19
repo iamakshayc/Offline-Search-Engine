@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication4.FXMLDocumentController">
+  <children>
+    <Label fx:id="label" layoutX="212.0" layoutY="385.0" prefWidth="214.0" text="" />
+      <MenuBar prefHeight="25.0" prefWidth="672.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Options">
+            <items>
+              <MenuItem fx:id="create" mnemonicParsing="false" onAction="#handleCreateAction" text="Create New Network" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleLoadAction" text="Load Network" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox layoutY="24.0" prefHeight="59.0" prefWidth="672.0" spacing="20.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <ComboBox fx:id="searchfield" editable="true" prefHeight="25.0" prefWidth="485.0" />
+          <Button fx:id="search" mnemonicParsing="false" onAction="#handleSearchAction" prefHeight="25.0" prefWidth="102.0" text="Search" />
+         </children>
+         <opaqueInsets>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" left="20.0" right="10.0" top="20.0" />
+         </padding>
+      </HBox>
+      <ListView fx:id="list" layoutX="12.0" layoutY="90.0" onMouseClicked="#handleListClick" prefHeight="405.0" prefWidth="650.0" style="-fx-cursor: Cursor.HAND;" />
+  </children>
+</AnchorPane>
